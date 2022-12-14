@@ -34,16 +34,16 @@ firewall --enabled
 network --onboot=yes --bootproto=dhcp --hostname=sina-laptop
 
 # Configure Keyboard Layouts
-keyboard us
+keyboard tr
 
 # Configure Language During Installation
-lang en_AU
+lang en_US
 
 # Services to enable/disable
 services --disabled=mlocate-updatedb,mlocate-updatedb.timer,geoclue,avahi-daemon
 
 # Configure Time Zone
-timezone Australia/Sydney
+timezone UTC
 
 # Configure X Window System
 xconfig --startxonboot
@@ -52,7 +52,7 @@ xconfig --startxonboot
 rootpw --lock
 
 # Create User Account
-user --name=sina --password=$userpass --iscrypted --groups=wheel
+user --name=murat --password=$userpass --iscrypted --groups=wheel
 
 # Perform Installation in Text Mode
 text
